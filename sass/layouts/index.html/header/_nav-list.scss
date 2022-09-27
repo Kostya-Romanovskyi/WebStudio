@@ -1,0 +1,90 @@
+// навігація хедеру
+
+.header__nav {
+    @media screen and (min-width: 768px) {
+        margin-left: 87px;
+        align-items: center;
+    }
+}
+
+.nav-list {
+    @media screen and (max-width: 767px) {
+        padding-top: 48px;
+        padding-left: 40px;
+        margin-bottom: 255px;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+}
+
+.nav-list__item {
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-left: 50px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+}
+
+.nav-list__link {
+    position: relative;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: decimal-round(47 / 40);
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    text-decoration: none;
+    color: $main-color;
+
+    transition: color $timing-function;
+
+    &.current {
+        color: $active-color;
+    }
+    @media screen and (min-width: 480px) {
+        font-size: 40px;
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: decimal-round(16 / 14);
+    }
+
+    &:hover,
+    &:focus {
+        color: $active-color;
+    }
+}
+
+.nav-list__link--indent {
+    @media screen and (min-width: 767px) {
+        padding: 32px 0;
+    }
+}
+.nav-list__link.current {
+    color: $active-color;
+    @media screen and (min-width: 767px) {
+        &::after {
+            content: "";
+            display: block;
+
+            position: absolute;
+            left: 0;
+            bottom: 0px;
+            height: 4px;
+            width: 100%;
+
+            border-radius: 2px;
+            background-color: $active-color;
+        }
+    }
+}

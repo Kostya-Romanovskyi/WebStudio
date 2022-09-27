@@ -1,0 +1,58 @@
+.header__burger-button {
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 40px;
+    min-width: 40px;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+.header__button-open {
+    .header__flex-mobile.is-open & {
+        display: none;
+    }
+}
+.header__button-close {
+    display: none;
+
+    .header__flex-mobile.is-open & {
+        display: block;
+    }
+}
+.button-menu {
+    position: absolute;
+    top: 9px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 40px;
+    min-width: 40px;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+.menu-close {
+    .button-menu:hover &,
+    .button-menu:focus & {
+        fill: $active-color;
+    }
+}

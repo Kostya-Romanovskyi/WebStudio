@@ -1,0 +1,103 @@
+.header {
+    position: relative;
+    border-bottom: 1px solid $header-line;
+}
+.header__flex {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+    }
+}
+.header__flex-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: 767px) {
+        padding: 10px 15px;
+    }
+}
+.header__flex-nav {
+    @media screen and (max-width: 767px) {
+        display: none;
+
+        &.is-open {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: $white-color;
+            z-index: 10;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 100%;
+    }
+}
+
+// /////////////////////////
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+// .header {
+//     position: relative;
+//     border-bottom: 1px solid $header-line;
+// }
+// .header__flex {
+//     @media screen and (min-width: 768px) {
+//         display: -webkit-box;
+//         display: -ms-flexbox;
+//         display: flex;
+//         -webkit-box-align: center;
+//         -ms-flex-align: center;
+//         align-items: center;
+//     }
+// }
+// .header__flex-mobile {
+//     display: -webkit-box;
+//     display: -ms-flexbox;
+//     display: flex;
+//     -webkit-box-pack: justify;
+//     -ms-flex-pack: justify;
+//     justify-content: space-between;
+//     -webkit-box-align: center;
+//     -ms-flex-align: center;
+//     align-items: center;
+//     @media screen and (max-width: 767px) {
+//         padding: 10px 15px;
+//     }
+// }
+// .header__flex-nav {
+//     @media screen and (max-width: 767px) {
+//         display: none;
+
+//         &.is-open {
+//             display: block;
+//             position: absolute;
+//             top: 0;
+//             left: 0;
+//             width: 100%;
+//             background-color: $white-color;
+//             z-index: 10;
+//         }
+//     }
+//     @media screen and (min-width: 768px) {
+//         display: -webkit-box;
+//         display: -ms-flexbox;
+//         display: flex;
+//         -webkit-box-align: center;
+//         -ms-flex-align: center;
+//         align-items: center;
+//     }
+//     @media screen and (min-width: 1200px) {
+//         width: 100%;
+//     }
+// }

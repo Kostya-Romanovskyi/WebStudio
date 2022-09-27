@@ -1,0 +1,47 @@
+body {
+    color: $main-color;
+    font-family: $main-font;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img,
+svg {
+    display: block;
+}
+
+.btn {
+    display: block;
+    cursor: pointer;
+}
+
+.list {
+    list-style: none;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @media screen and (min-width: 480px) {
+        max-width: 480px;
+    }
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+    }
+}

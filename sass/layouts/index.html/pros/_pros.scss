@@ -1,0 +1,59 @@
+// СИЛЬНІ СТОРОНИ
+
+.pros-list {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
+
+.pros-list__item {
+    $items: 2;
+    flex-basis: calc((100% - $indent * ($items - 1)) / $items);
+
+    @media screen and (min-width: 1200px) {
+        $items: 4;
+        flex-basis: calc((100% - $indent * ($items - 1)) / $items);
+    }
+}
+
+.pros-list__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 120px;
+
+    margin-bottom: 30px;
+
+    background-color: $bg-light;
+
+    border-radius: 4px;
+}
+
+.pros-list__icon {
+    background-color: $bg-light;
+}
+.pros-list__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: decimal-round(16 / 14);
+    letter-spacing: 0.03em;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+}
+
+.pros-list__text {
+    font-size: 14px;
+    line-height: decimal-round(24 / 14);
+
+    letter-spacing: 0.03em;
+
+    margin-bottom: 30px;
+
+    color: $secondary-color;
+}

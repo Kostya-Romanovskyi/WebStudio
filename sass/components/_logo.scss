@@ -1,0 +1,13 @@
+.logo {
+    @extend %logo;
+
+    &--color {
+        color: $active-color;
+    }
+    &--white {
+        color: $white-color;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+        padding: 24px 0;
+    }
+}

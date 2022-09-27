@@ -1,0 +1,115 @@
+// аутентифікація хедеру
+.auth-list {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 40px;
+    margin-bottom: 64px;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-left: auto;
+    }
+}
+
+.auth-list__item {
+    &:not(:first-child) {
+        margin-bottom: 15px;
+    }
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        &:not(:first-child) {
+            margin-bottom: 32px;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        &:last-child {
+            margin-right: 18px;
+        }
+        &:not(:first-child) {
+            margin-bottom: 0;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        & + & {
+            margin-left: 30px;
+        }
+        &:not(:first-child) {
+            margin-bottom: 0;
+        }
+    }
+}
+.auth-list__link {
+    @media screen and (max-width: 479px) {
+        font-size: 24px;
+    }
+    font-weight: 500;
+    font-size: 34px;
+    line-height: decimal-round(40 / 34);
+    letter-spacing: 0.02em;
+    color: $active-color;
+    text-decoration: none;
+
+    transition: color $timing-function;
+
+    @media screen and (min-width: 768px) {
+        display: inline-flex;
+        align-items: center;
+
+        color: $secondary-color;
+        font-size: 14px;
+        line-height: decimal-round(16 / 14);
+    }
+
+    &:hover,
+    &:focus {
+        color: $active-color;
+        fill: $active-color;
+    }
+}
+.auth-list__link--indent {
+    @media screen and (min-width: 768px) {
+        padding: 5px 0;
+    }
+    @media screen and (min-width: 1200px) {
+        padding: 32px 0;
+    }
+}
+.auth-list__link--size {
+    @media screen and (min-height: 355px) and (max-width: 767px) {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: decimal-round(28 / 24);
+        letter-spacing: 0.02em;
+
+        color: $secondary-color;
+    }
+
+    @media screen and(max-width:479px) {
+        font-size: 20px;
+    }
+}
+.auth-list__icon {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    display: block;
+    align-items: center;
+
+    margin-right: 10px;
+
+    fill: $secondary-color;
+    transition: fill $timing-function;
+
+    .auth-list__link:hover &,
+    .auth-list__link:focus & {
+        fill: $active-color;
+    }
+}

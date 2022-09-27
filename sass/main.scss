@@ -1,0 +1,32 @@
+@import "./utiles/modern-normalize";
+@import "./utiles/variables";
+@import "./utiles/placeholders";
+@import "./utiles/mixins";
+@import "./utiles/decimals";
+@import "./utiles/visualy-hidden";
+@import "./base/global";
+@import "./components/logo";
+@import "./components/section";
+
+// main index.html
+@import "./layouts/index.html/header/header";
+@import "./layouts/index.html/header/burger";
+@import "./layouts/index.html/header/burger-menu";
+@import "./layouts/index.html/header/nav-list";
+@import "./layouts/index.html/header/auth-list";
+@import "./layouts/index.html/hero/hero-title";
+@import "./layouts/index.html/pros/pros";
+@import "./layouts/index.html/work-list/work-list";
+@import "./layouts/index.html/team-list/team-list";
+@import "./layouts/index.html/team-list/sub-team";
+@import "./layouts/index.html/clients-list/clients-list";
+@import "./layouts/index.html/footer/footer";
+@import "./layouts/index.html/footer/address";
+@import "./layouts/index.html/footer/social-links";
+@import "./layouts/index.html/footer/footer-form";
+@import "./layouts/index.html/hero/modal-window";
+@import "./layouts/index.html/hero/form-modal";
+
+// portfolio
+@import "./layouts/portfolio/filter-list";
+@import "./layouts/portfolio/projects-list";

@@ -1,0 +1,64 @@
+// СОЦІАЛЬНІ МЕРЕЖІ В ФУТЕРІ
+
+.social-links {
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 70px;
+        margin-bottom: 0;
+    }
+}
+
+.social-links__text {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: decimal-round(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    text-align: center;
+
+    color: $white-color;
+
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
+}
+
+.social-links__list {
+    display: flex;
+    justify-content: center;
+}
+
+.social-list__item {
+    margin-left: 10px;
+
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+.social-list__link {
+    display: block;
+    padding: 12px;
+    border-radius: 50%;
+
+    color: $white-color;
+    background-color: $social-links-rgba-10;
+
+    transition: background-color $timing-function;
+
+    &:hover,
+    &:focus {
+        background-color: $active-color;
+    }
+}
+
+.social-list__icons {
+    display: block;
+
+    fill: currentColor;
+}

@@ -1,0 +1,13 @@
+.footer {
+    background-color: $bg-dark;
+    padding: 60px 0;
+}
+.footer--container {
+    text-align: center;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+}
