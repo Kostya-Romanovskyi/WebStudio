@@ -41,7 +41,6 @@
     line-height: decimal-round(16 / 14);
     letter-spacing: 0.03em;
 
-    text-align: center;
     text-transform: uppercase;
 
     margin-bottom: 10px;
@@ -56,4 +55,8 @@
     margin-bottom: 30px;
 
     color: $secondary-color;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+    }
 }

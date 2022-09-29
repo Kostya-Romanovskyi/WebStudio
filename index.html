@@ -30,7 +30,6 @@
               type="button"
               class="header__burger-button js-open-menu enableBodyScroll"
               aria-expanded="false"
-              scrollLockMethod
             >
               <svg width="40px" height="40px">
                 <use
@@ -40,7 +39,7 @@
               </svg>
             </button>
           </div>
-          <div class="header__flex-nav js-menu-container disableBodyScroll">
+          <div class="header__flex-nav js-menu-container" scrollLockMethod>
             <nav class="header__nav">
               <!-- НАВІГАЦІЙНИЙ СПИСОК -->
 
@@ -124,7 +123,7 @@
     <!-- HEADER END -->
     <main>
       <!-- ГЕРОЙ -->
-      <section class="hero hero--margin">
+      <section class="hero">
         <div class="container">
           <h1 class="hero__title">
             Ефективні рішення для <br />
@@ -204,7 +203,12 @@
               <div class="work-list__wrap">
                 <img
                   class="work-list__img"
-                  src="./images/index/work/keyboard1.jpg"
+                  srcset="
+                    ./images/index/work/keyboard370.jpg  1x,
+                    ./images/index/work/keyboard740.jpg  2x,
+                    ./images/index/work/keyboard1110.jpg 3x
+                  "
+                  src="./images/index/work/keyboard370.jpg"
                   alt="Программіст друкує код на клавіатурі"
                   width="370"
                   height="294"
@@ -217,7 +221,12 @@
               <div class="work-list__wrap">
                 <img
                   class="work-list__img"
-                  src="./images/index/work/phone-laptop2.jpg"
+                  srcset="
+                    ./images/index/work/phone-laptop370.jpg  1x,
+                    ./images/index/work/phone-laptop740.jpg  2x,
+                    ./images/index/work/phone-laptop1110.jpg 3x
+                  "
+                  src="./images/index/work/phone-laptop370.jpg"
                   alt="Людина тримає смартфон у лівій руці та свайпає по тачпаду правою рукою"
                   width="370"
                   height="294"
@@ -230,7 +239,12 @@
               <div class="work-list__wrap">
                 <img
                   class="work-list__img"
-                  src="./images/index/work/table3.jpg"
+                  srcset="
+                    ./images/index/work/table370.jpg  1x,
+                    ./images/index/work/table740.jpg  2x,
+                    ./images/index/work/table1110.jpg 3x
+                  "
+                  src="./images/index/work/table370.jpg"
                   alt="Дизайнер тримає планшет в лівій руці та вибирає колір на палітрі стілусом"
                   width="370"
                   height="294"

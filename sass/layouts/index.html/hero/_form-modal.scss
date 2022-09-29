@@ -92,6 +92,7 @@
 .check {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 
     font-size: 12px;
     line-height: decimal-round(14 / 12);
@@ -103,8 +104,6 @@
         align-items: center;
     }
     @media screen and (min-width: 1200px) {
-        justify-content: center;
-
         font-size: 14px;
         line-height: decimal-round(24 / 14);
     }
@@ -120,7 +119,6 @@
 
 .check__svg {
     margin-right: 8px;
-    margin-bottom: 4px;
 }
 .check__empty {
     .check__input:checked ~ & {
@@ -160,14 +158,9 @@
 
     letter-spacing: 0.03em;
 
-    margin-top: 5px;
+    margin-left: 4px;
 
     color: $active-color;
-
-    @media screen and (min-width: 480px) {
-        margin-top: 0;
-        margin-left: 4px;
-    }
 
     @media screen and (min-width: 1200px) {
         font-size: 14px;

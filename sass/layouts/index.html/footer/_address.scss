@@ -2,6 +2,10 @@
 .logo--indent {
     display: inline-block;
     margin-bottom: 40px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 20px;
+    }
 }
 .address-list {
     display: block;
@@ -27,7 +31,6 @@
 .address-list__link {
     display: block;
 
-    font-weight: 500;
     font-size: 14px;
     line-height: decimal-round(24 / 14);
     letter-spacing: 0.02em;
