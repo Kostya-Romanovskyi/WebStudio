@@ -71,7 +71,7 @@
 
 .projects-list__hidden {
     position: absolute;
-    top: 0;
+    top: 43px;
     left: 0;
 
     font-weight: normal;
@@ -79,7 +79,7 @@
     line-height: decimal-round(28 / 18);
     letter-spacing: 0.03em;
 
-    padding: 63px 24px;
+    padding: 77px 24px;
 
     color: $white-color;
 
@@ -91,14 +91,20 @@
     .projects-list__item:hover & {
         transform: translateY(0);
     }
+
+    @media screen and (min-width: 768px) {
+        top: 0;
+
+        padding: 49px 24px 77px 24px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 64px 44px;
+    }
 }
 
 .projects-list__img {
     max-width: 100%;
-
-    // @media screen and (min-width: 768px) {
-    //     height: 294px;
-    // }
 }
 
 .projects-list__title {

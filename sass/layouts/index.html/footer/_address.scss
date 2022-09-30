@@ -1,11 +1,7 @@
 // АДРЕСА
 .logo--indent {
     display: inline-block;
-    margin-bottom: 40px;
-
-    @media screen and (min-width: 1200px) {
-        margin-bottom: 20px;
-    }
+    margin-bottom: 20px;
 }
 .address-list {
     display: block;

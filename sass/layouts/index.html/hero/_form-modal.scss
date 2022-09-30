@@ -91,18 +91,14 @@
 
 .check {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
 
     font-size: 12px;
     line-height: decimal-round(14 / 12);
 
     cursor: pointer;
 
-    @media screen and (min-width: 480px) {
-        flex-direction: row;
-        align-items: center;
-    }
     @media screen and (min-width: 1200px) {
         font-size: 14px;
         line-height: decimal-round(24 / 14);
