@@ -41,9 +41,15 @@
     line-height: decimal-round(16 / 14);
     letter-spacing: 0.03em;
 
+    text-align: center;
+
     text-transform: uppercase;
 
     margin-bottom: 10px;
+
+    @media screen and (min-width: 768px) {
+        text-align: left;
+    }
 }
 
 .pros-list__text {
