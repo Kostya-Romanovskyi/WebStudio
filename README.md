@@ -1,3 +1,3 @@
 # WebStudio
-Using HTML,CSS,SCSS
+Using HTML, CSS, SCSS
 
