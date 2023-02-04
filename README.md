@@ -1,3 +1,4 @@
-# WebStudio
-Using HTML, CSS, SCSS, JavaScript
+# Using HTML, CSS, SCSS, JavaScript
+Solo project
+
 
